@@ -1,0 +1,74 @@
+body {
+	font-family: verdana, arial, sans-serif;
+	font-size: 10pt;
+  text-align: center;  
+}
+
+table {
+  float: left;
+  width: 60%;
+  border: 2px solid darkgrey;
+  padding 10px; /*?*/
+  margin 10px; /*?*/
+  margin-left: 5%;
+  border-collapse: collapse;
+}
+
+td {
+  height: 60px;
+  width: 120px;
+  border: 1px dotted #29407C; /* doesn't do anything? */
+}
+
+td.blank {
+  border: 1px solid darkgrey;
+  background: #E0E0E0;
+}
+
+/* process groups */
+.pg {
+  border: 2px solid darkgrey;
+  background: white;
+  color: #29407C;
+}
+
+/* knowledge areas */
+.ka {
+  border: 1px solid darkgrey;
+  background: #29407C;
+  color: white;
+}
+
+#wrapper {
+  margin-top: 30px;
+}
+
+#stack {
+ float:right;
+ margin-right: 12%;
+ height: 150px;
+ width: 200px;
+ background: #29407C;
+ border-radius: 10px;
+}
+
+#stack div {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #333;
+  float: left;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top:10px;
+  padding: 10px;
+  position:absolute;
+  height: 50px;
+  width: 120px;
+  z-index:auto;
+  margin: 0 auto;
+  color: #29407C;
+}
+
+#grid .hovering {
+  background: red;
+}
