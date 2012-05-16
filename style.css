@@ -1,6 +1,7 @@
 body {
 	font-family: verdana, arial, sans-serif;
-	font-size: 12pt;
+	font-size: 10pt;
+  text-align: center;  
 }
 
 table {
@@ -11,14 +12,12 @@ table {
   margin 10px; /*?*/
   margin-left: 5%;
   border-collapse: collapse;
-  table-layout: fixed;
 }
 
 td {
   height: 60px;
   width: 120px;
   border: 1px dotted #29407C; /* doesn't do anything? */
-  text-align: center;
 }
 
 td.blank {
@@ -51,7 +50,6 @@ td.blank {
  width: 200px;
  background: #29407C;
  border-radius: 10px;
-
 }
 
 #stack div {
@@ -59,17 +57,16 @@ td.blank {
   border-radius: 10px;
   border: 2px solid #333;
   float: left;
-  height: 40px;
-  margin: 0 0 0 0px;
   margin: 0;
   padding-bottom: 10px;
   padding-top:10px;
   padding: 10px;
   position:absolute;
+  height: 50px;
   width: 120px;
   z-index:auto;
-  width: 50%;
   margin: 0 auto;
+  color: #29407C;
 }
 
 #grid .hovering {
