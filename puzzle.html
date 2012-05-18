@@ -143,10 +143,10 @@ function init() {
     var card = cardKeys[i];
     var stackId = cards[card];
     if (i < 5) { // cards 0 - 4 = process groups
-      $('#' + stackId).addClass('pg').append(card);
+      $('#' + stackId).empty().addClass('pg').removeClass('ui-droppable').append(card);
     }
     else if (i >= 5 && i < 14) { // cards 5 - 13 = knowledge areas
-      $('#' + stackId).addClass('ka').append(card);
+      $('#' + stackId).empty().addClass('ka').removeClass('ui-droppable').append(card);
     }    
   }  
   $('#A0').addClass('blank'); // corner card is blank
@@ -155,11 +155,9 @@ function init() {
 function handleCardDrop(event, ui) {
   var card = ui.draggable.data('matches');
   var grid = $(this).data('accepts');
-  // alert("grid:"+grid+"|"+"card:"+card);
 
   if (grid == card) {
     ui.draggable.draggable('disable');
-    //$(this).droppable('disable');
     ui.draggable.position({ of: $(this), my: 'center', at: 'center' });
     ui.draggable.draggable('option', 'revert', false);
     ui.draggable.addClass('correct');
@@ -174,8 +172,7 @@ function handleCardDrop(event, ui) {
     <div>
       <table id="grid">
       </table>
-    </div> <!-- grid -->
-    
+    </div>    
     <div id="stack">
     </div>
   </div>
