@@ -1,6 +1,6 @@
 body {
-	font-family: verdana, arial, sans-serif;
-	font-size: 10pt;
+  font-family: verdana, arial, sans-serif;
+  font-size: 10pt;
   text-align: center;  
 }
 
@@ -44,12 +44,12 @@ td.blank {
 }
 
 #stack {
- float:right;
- margin-right: 12%;
- height: 100px;
- width: 170px;
- background: #29407C;
- border-radius: 10px;
+  float:right;
+  margin-right: 12%;
+  height: 100px;
+  width: 170px;
+  background: #29407C;
+  border-radius: 10px;
 }
 
 #stack div {
@@ -70,5 +70,5 @@ td.blank {
 }
 
 #grid .hovering {
-  background: red;
+  background: gray;
 }
