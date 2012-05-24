@@ -1,3 +1,3 @@
 $(function(){
-	var g = new Puzzle();
+  var app = new PMPuzzle.App();
 });
